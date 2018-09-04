@@ -12,6 +12,8 @@
 		B685D2EB213EF55700CFC50F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B685D2E9213EF55700CFC50F /* Main.storyboard */; };
 		B685D2ED213EF55700CFC50F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B685D2EC213EF55700CFC50F /* Assets.xcassets */; };
 		B685D2F0213EF55700CFC50F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B685D2EE213EF55700CFC50F /* LaunchScreen.storyboard */; };
+		B685D2F8213EFC4000CFC50F /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B685D2F7213EFC4000CFC50F /* TrackCell.swift */; };
+		B685D2FA213EFC6500CFC50F /* TrackTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B685D2F9213EFC6500CFC50F /* TrackTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B685D2EC213EF55700CFC50F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B685D2EF213EF55700CFC50F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B685D2F1213EF55700CFC50F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B685D2F7213EFC4000CFC50F /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		B685D2F9213EFC6500CFC50F /* TrackTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				B685D2EC213EF55700CFC50F /* Assets.xcassets */,
 				B685D2EE213EF55700CFC50F /* LaunchScreen.storyboard */,
 				B685D2F1213EF55700CFC50F /* Info.plist */,
+				B685D2F7213EFC4000CFC50F /* TrackCell.swift */,
+				B685D2F9213EFC6500CFC50F /* TrackTable.swift */,
 			);
 			path = "Music App";
 			sourceTree = "<group>";
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B685D2FA213EFC6500CFC50F /* TrackTable.swift in Sources */,
 				B685D2E8213EF55700CFC50F /* ViewController.swift in Sources */,
 				B685D2E6213EF55700CFC50F /* AppDelegate.swift in Sources */,
+				B685D2F8213EFC4000CFC50F /* TrackCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
