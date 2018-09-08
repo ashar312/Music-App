@@ -10,11 +10,13 @@ import UIKit
 
 class TrackTable: UITableView, UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return dataSourceArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TrackCell") as! TrackCell
+        cell.populatecCell(track: dataSourceArray[indexPath.row])
+        
         return cell    }
     
   

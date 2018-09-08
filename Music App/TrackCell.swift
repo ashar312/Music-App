@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class TrackCell: UITableViewCell {
 
@@ -27,11 +28,15 @@ class TrackCell: UITableViewCell {
         
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func populatecCell(track : Track)
+    {
+        name.text = track.trackName
+        artist.text = track.artistName
+        genre.text = track.primaryGenreName
+        
+        if let url = track.artworkUrl100{
+            trackimage.af_setImage(withURL : url)
+        }
     }
-
     
 }
