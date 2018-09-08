@@ -8,16 +8,16 @@
 
 import UIKit
 
-class TrackTable: UITableView, UITableViewDelegate, UITableViewDataSource {
+class TrackTable: UITableView, UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TrackCell") as! TrackCell
+        return cell    }
     
-
+  
     var dataSourceArray =  [String](){
         didSet{
             reloadData()
@@ -31,20 +31,21 @@ class TrackTable: UITableView, UITableViewDelegate, UITableViewDataSource {
     }
     
     
-    func noofsection(in tableWiew: UITableView) -> Int{
+    func numberOfSection(in tableWiew: UITableView) -> Int{
         return 1
     }
-
-    func tableview (_ tableview : UITableView, numberOfrowsInSection indexPath : IndexPath) -> Int {
+/*
+    func tableview (_ tableview : UITableView, numberOfRowsInSection section : Int ) -> Int {
         
-        return dataSourceArray.count
+       // return dataSourceArray.count
+        return 10
     }
-    
-    func tableview (_ tableview : UITableView, numberOfrowsInSection indexPath : IndexPath) -> UITableViewCell
+   
+    func tableview (_ tableview : UITableView, cellForRowAt indexPath : IndexPath) -> UITableViewCell
     {
         let cell = tableview.dequeueReusableCell(withIdentifier: "TrackCell") as! TrackCell
         return cell
-    }
+    }*/
     
     
 }

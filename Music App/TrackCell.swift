@@ -10,9 +10,21 @@ import UIKit
 
 class TrackCell: UITableViewCell {
 
+    @IBOutlet weak var trackimage: UIImageView!
+    
+    @IBOutlet weak var timelabel: UILabel!
+    
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var artist: UILabel!
+    @IBOutlet weak var songview: TrackCell!
+    
+    
+    @IBOutlet weak var genre: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    //    trackimage.clipsToBounds = true
+        selectionStyle = .none
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -21,6 +33,5 @@ class TrackCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func fadasd(){
-    }
+    
 }

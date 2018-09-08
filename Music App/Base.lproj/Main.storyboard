@@ -12,12 +12,12 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Music_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UJ7-Sh-ETg" customClass="TrackTable" customModule="Music_App" customModuleProvider="target">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UJ7-Sh-ETg" customClass="TrackTable" customModule="Music_App" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -28,7 +28,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSQ-H8-4rc">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSQ-H8-4rc" customClass="TrackCell" customModule="Music_App" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="10" width="355" height="129.5"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XhX-VS-K31">
@@ -38,20 +38,20 @@
                                                                 <constraint firstAttribute="height" constant="80" id="rjc-yX-8I5"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Nx-2f-NqZ">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black or White" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Nx-2f-NqZ">
                                                             <rect key="frame" x="120" y="25" width="215" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thy-co-h5F">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Michae Jackson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thy-co-h5F">
                                                             <rect key="frame" x="120" y="51" width="215" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSW-hA-bOV">
-                                                            <rect key="frame" x="120" y="77" width="42" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSW-hA-bOV">
+                                                            <rect key="frame" x="120" y="77" width="30" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -79,6 +79,7 @@
                                                         <constraint firstAttribute="trailing" secondItem="ddb-zk-aC3" secondAttribute="trailing" constant="10" id="aGo-7u-loq"/>
                                                         <constraint firstItem="9Nx-2f-NqZ" firstAttribute="leading" secondItem="XhX-VS-K31" secondAttribute="trailing" constant="20" id="hEE-TW-1Is"/>
                                                         <constraint firstAttribute="bottom" secondItem="ddb-zk-aC3" secondAttribute="bottom" constant="10" id="kig-XG-VsB"/>
+                                                        <constraint firstAttribute="width" constant="355" id="lLR-Jl-7Ys"/>
                                                         <constraint firstItem="Thy-co-h5F" firstAttribute="top" secondItem="9Nx-2f-NqZ" secondAttribute="bottom" constant="5" id="mEK-l2-Im0"/>
                                                         <constraint firstItem="XhX-VS-K31" firstAttribute="centerY" secondItem="HSQ-H8-4rc" secondAttribute="centerY" id="rLv-Rh-1tI"/>
                                                         <constraint firstItem="Thy-co-h5F" firstAttribute="leading" secondItem="9Nx-2f-NqZ" secondAttribute="leading" id="v8H-ft-LlV"/>
@@ -93,6 +94,14 @@
                                                 <constraint firstItem="HSQ-H8-4rc" firstAttribute="top" secondItem="8TX-2U-NZi" secondAttribute="top" constant="10" id="u8d-97-X9Y"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="artist" destination="Thy-co-h5F" id="MvW-de-RV5"/>
+                                            <outlet property="genre" destination="kSW-hA-bOV" id="grP-xi-T7q"/>
+                                            <outlet property="name" destination="9Nx-2f-NqZ" id="ZE9-lX-gz7"/>
+                                            <outlet property="songview" destination="HSQ-H8-4rc" id="yH7-6s-jai"/>
+                                            <outlet property="timelabel" destination="ddb-zk-aC3" id="yVe-A4-Zdq"/>
+                                            <outlet property="trackimage" destination="XhX-VS-K31" id="f9s-r5-eZX"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -114,6 +123,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="xiH-Rt-e7g"/>
+                    <connections>
+                        <outlet property="trackTable" destination="UJ7-Sh-ETg" id="Iup-12-kld"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
