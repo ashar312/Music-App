@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+let BASE_url = "https://itunes.apple.com/search?"
+
+func CreateSearchString(searchKeyword : String)->String{
+    
+    let searchstring = searchKeyword.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+    let urlString = "term=\(searchstring)&media=music&entity=musicTrack"
+    return BASE_url+urlString
+}
